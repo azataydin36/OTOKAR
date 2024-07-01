@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otokar - Bizim Hakkımızda</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Hakkında.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <!-- Logo ve Logo Resmi -->
+            <div class="logo-container">
+                <img src="img/otogar.jpg" alt="Otokar Logo" class="logo-image">
+                <h1 class="logo">Otokar</h1>
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-links">
+                    <li><a href="Anasayfa.html">Anasayfa</a></li>
+                    <li><a href="Ticari Araçlar.html">Ticari Araçlar</a></li>
+                    <li><a href="Hakkında.html" class="active">Otokar Hakkında</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="savunmasanayi.html">Savunma Sanayi</a></li>
+                </ul>
+            </nav>
+            <select id="select-box" onchange="changePage()">
+                <option value="Anasayfa.html">Anasayfa</option>
+                <option value="Ticari Araçlar.html">Ticari Araçlar</option>
+                <option value="Hakkında.html" selected>Otokar Hakkında</option>
+                <option value="iletisim.html">İletişim</option>
+                <option value="savunmasanayi.html">Savunma Sanayi</option>
+            </select>
+        </div>
+    </header>
+    
+    <section class="banner">
+        <div class="banner-content">
+            <div class="container">
+                <h1 class="banner-title">Otokar Hakkında</h1>
+                <p class="banner-description">Türkiye'nin önde gelen araç üreticilerinden biri olan Otokar'ın hikayesi.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="content">
+        <div class="container">
+            <div class="photo-with-caption">
+                <div class="photo-info">
+                    <img src="img/hakkimizda.jpg" alt="Otokar Binası">
+                    <div class="caption">
+                        <h2 class="caption-title">Fabrikamız</h2>
+                        <p class="caption-text">Koç Topluluğu şirketlerinden Otokar, 1963'ten bu yana kendi teknoloji, tasarım ve uygulamaları ile müşterilerinin ihtiyaçlarına uygun özel çözümler sunuyor. Sakarya’daki 552.000 m²’lik alana kurulu fabrikasında 3000’den fazla çalışanıyla faaliyet gösteriyor.
+
+                            Otokar, toplu taşımacılık alanında otobüs, nakliye ve lojistik sektörü için hafif kamyon, savunma sanayii için tekerlekli zırhlı ve paletli zırhlı araçlar üretiyor. Yüzde yüz Türk sermayeli global bir şirket olan Otokar, bugün otomotiv ve savunma sanayiinde fikri mülkiyet hakları kendisine ait ürünleri ile yer alıyor.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Misyonumuz</h2>
+            
+            <div class="photo-with-caption">
+                <div class="photo-info">
+                    <img src="img/misyonumuz.jpg" alt="Otokar Misyon">
+                    <div class="caption">
+                        <h2 class="caption-title">Misyonumuz</h2>
+                        <p class="caption-text">Otokar'ın ana görevi, ticari araçlar ile çeşitli savunma sanayii mamullerini, müşteri beklentileri doğrultusunda, dünya çapında rekabet gücü olan ürünler olarak tasarlamak, üretmek ve pazarlamaktır.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Vizyonumuz</h2>
+            
+            <div class="photo-with-caption">
+                <div class="photo-info">
+                    <img src="img/vizyonumuz.jpg" alt="Otokar Vizyon">
+                    <div class="caption">
+                        <h2 class="caption-title">Vizyonumuz</h2>
+                        <p class="caption-text">Otokar, kendi teknolojisini geliştirerek ürünlerinde yerli ve milli kimlik özelliğini korur; topyekûn mükemmellik felsefesi ile müşterilerinin, çalışanlarının ve ortaklarının memnuniyetinde sürekliliği sağlamayı hedefler.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Değerlerimiz</h2>
+            
+            <div class="photo-with-caption">
+                <div class="photo-info">
+                    <img src="img/değerlerimiz.jpg" alt="Otokar Değerlerimiz">
+                    <div class="caption">
+                        <h2 class="caption-title">Değerlerimiz</h2>
+                        <p class="caption-text">Otokar, Koç Topluluğu’nun belirlediği hedef ve ilkeleri çerçevesinde, çalışanlarıyla birlikte, müşterilerinin tatminini sağlayarak, sağlıklı gelişmeyi, evrensel kalite ve standartlarda ürün ve hizmetler sunmayı amaçlar. Bu suretle ülkesi, müşterileri, ortakları ve yan sanayi için güvenilirlik, devamlılık ve saygınlık simgesi olmayı hedefler. Otokar, müşterilerini velinimeti olarak görür, daima “en iyi” olmak için çalışır, en önemli sermayesinin insan kaynağı olduğunu bilir, sürekli gelişmek için kaynak yaratmak amacı ile üstün iş ahlakı ve çalışma ilkelerine uyarak, gücünü aldığı Türk ekonomisine güç katmayı hedefler.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2024 Otokar - Tüm Hakları Saklıdır.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/otokarsavunmasanayi" class="social-link" id="instagram-link">
+                    <img src="img/instagram.jpg" alt="Instagram Logo"> Instagram
+                </a>
+                <a href="https://www.twitter.com/OtokarAS" class="social-link" id="twitter-link">
+                    <img src="img/twitter.jpg" alt="Twitter Logo"> Twitter
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function changePage() {
+            var selectBox = document.getElementById("select-box");
+            var selectedValue = selectBox.value;
+            window.location.href = selectedValue;
+        }
+
+        // Ekran boyutuna göre menü veya seçenek kutusunu göster/gizle
+        function toggleMenu() {
+            var mainNav = document.getElementById("main-nav");
+            var selectBox = document.getElementById("select-box");
+
+            if (window.innerWidth <= 768) {
+                mainNav.style.display = "none";
+                selectBox.style.display = "block";
+            } else {
+                mainNav.style.display = "block";
+                selectBox.style.display = "none";
+            }
+        }
+
+        // Sayfa yüklendiğinde ve boyut değiştiğinde kontrol et
+        window.onload = toggleMenu;
+        window.onresize = toggleMenu;
+    </script>
+</body>
+</html>

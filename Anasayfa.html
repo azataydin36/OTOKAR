@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otokar-Anasayfa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="anasayfa.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <!-- Logo ve Logo Resmi -->
+            <div class="logo-container">
+                <img src="img/otogar.jpg" alt="Otokar Logo" class="logo-image">
+                <h1 class="logo">Otokar</h1>
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-links">
+                    <li><a href="Anasayfa.html"class="active">Anasayfa</a></li>
+                    <li><a href="Ticari Araçlar.html">Ticari Araçlar</a></li>
+                    <li><a href="Hakkında.html">Otokar Hakkında</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="savunmasanayi.html">Savunma Sanayi</a></li>
+                </ul>
+            </nav>
+            <select id="select-box" onchange="changePage()">
+                <option value="Anasayfa.html"selected>Anasayfa</option>
+                <option value="Ticari Araçlar.html">Ticari Araçlar</option>
+                <option value="Hakkında.html">Otokar Hakkında</option>
+                <option value="iletisim.html">İletişim</option>
+                <option value="savunmasanayi.html">Savunma Sanayi</option>
+            </select>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="banner-content">
+            <div class="container">
+                <h1 class="banner-title">Otokar Güven Ve Kalitenin Adresi</h1>
+                <p class="banner-description">Dünyanın En İyi Ve En Kaliteli Araçlarını Üretiyoruz.</p>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="container">
+            <h2 class="section-title">Yeni Modellerimiz</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="img/arac1.jpg" alt="Araç 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/arac2.jpg" alt="Araç 2">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2024 Otokar - Tüm Hakları Saklıdır.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/otokarsavunmasanayi" class="social-link" id="instagram-link">
+                    <img src="img/instagram.jpg" alt="Instagram Logo"> Instagram
+                </a>
+                <a href="https://www.twitter.com/OtokarAS" class="social-link" id="twitter-link">
+                    <img src="img/twitter.jpg" alt="Twitter Logo"> Twitter
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function changePage() {
+            var selectBox = document.getElementById("select-box");
+            var selectedValue = selectBox.value;
+            window.location.href = selectedValue;
+        }
+
+        // Ekran boyutuna göre menü veya seçenek kutusunu göster/gizle
+        function toggleMenu() {
+            var mainNav = document.getElementById("main-nav");
+            var selectBox = document.getElementById("select-box");
+
+            if (window.innerWidth <= 768) {
+                mainNav.style.display = "none";
+                selectBox.style.display = "block";
+            } else {
+                mainNav.style.display = "block";
+                selectBox.style.display = "none";
+            }
+        }
+
+        // Sayfa yüklendiğinde ve boyut değiştiğinde kontrol et
+        window.onload = toggleMenu;
+        window.onresize = toggleMenu;
+    </script>
+</body>
+</html>

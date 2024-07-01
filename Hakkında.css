@@ -1,0 +1,197 @@
+/* Genel stiller */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.logo {
+    font-size: 3em;
+    margin: 0 20px;
+}
+
+.main-nav {
+    flex: 1;
+    text-align: right;
+}
+
+/* Banner */
+.banner {
+    background-image: url('img/banner2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-title {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.banner-description {
+    font-size: 1.5em;
+}
+
+/* İçerik */
+.content {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.photo-with-caption {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.photo-info {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.photo-info:hover {
+    transform: translateY(-5px);
+}
+
+.photo-info img {
+    width: 100%; /* Resimlerin genişliği tam konteynır genişliği kadar olacak */
+    height: auto; /* Otomatik yükseklik ayarı */
+    vertical-align: middle;
+}
+
+.caption {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+.caption-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.caption-text {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #363232;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Linkler */
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/* Mobil Uyumlu Stiller */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Ekranın %90'ına kadar içeriği hizala */
+    }
+
+    .nav-links {
+        display: none; /* Geniş ekranda göster, küçük ekranda gizle */
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center; /* Logo ve metni ortala */
+        margin-bottom: 20px; /* Logoyu ve metni alttaki içerikten uzaklaştır */
+    }
+
+    .logo {
+        font-size: 2em; /* Mobil cihazlarda logo boyutunu küçült */
+        margin: 0; /* Logo etrafındaki boşluğu sıfırla */
+    }
+
+    .logo-image {
+        width: 40px; /* Mobil cihazlarda logo resminin boyutunu küçült */
+        margin-right: 5px; /* Logo ile metin arasındaki boşluğu azalt */
+    }
+
+    #select-box {
+        display: block; /* Mobil cihazlarda seçenek kutusunu göster */
+        margin: 10px auto; /* Seçenek kutusunu ortala ve kenar boşlukları ekler */
+    }
+
+    .main-nav {
+        display: none; /* Geniş ekranlarda göster, küçük ekranlarda gizle */
+    }
+
+    .banner-title {
+        font-size: 2em; /* Mobil cihazlarda banner başlığı boyutunu küçült */
+    }
+
+    .banner-description {
+        font-size: 1.2em; /* Mobil cihazlarda banner açıklaması boyutunu küçült */
+    }
+
+    .product img {
+        width: 100%; /* Ürün resimlerini tam genişlikte göster */
+        height: auto; /* Boy oranını koru */
+    }
+
+    .product-info {
+        text-align: left; /* Ürün açıklamasını sol kenara hizala */
+    }
+
+    .product {
+        align-items: flex-start; /* Ürünleri üstten başlayacak şekilde hizala */
+    }
+}

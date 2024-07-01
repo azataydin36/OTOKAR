@@ -1,0 +1,195 @@
+/* Genel stiller */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Arka plan rengi */
+    color: #333; /* Metin rengi */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.logo {
+    font-size: 3em;
+    margin: 0 20px;
+}
+
+.main-nav {
+    flex: 2;
+    text-align: right;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Banner */
+.banner {
+    background-image: url('img/banner5.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.banner-title {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.banner-description {
+    font-size: 1.5em;
+}
+
+/* İçerik */
+.content {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Ürünleri dikey hizaya getir */
+    margin-bottom: 40px;
+}
+
+.product img {
+    width: 1500px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+.product-info {
+    flex: 1;
+    margin-top: 20px; /* Ürün açıklamasını ürün resminden ayır */
+    max-width: 80%; /* Açıklama metninin maksimum genişliğini ayarla */
+}
+
+.product-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0f0f0f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+/* Mobil Uyumlu Stiller */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Ekranın %90'ına kadar içeriği hizala */
+    }
+
+    .nav-links {
+        display: none; /* Geniş ekranda göster, küçük ekranda gizle */
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center; /* Logo ve metni ortala */
+        margin-bottom: 20px; /* Logoyu ve metni alttaki içerikten uzaklaştır */
+    }
+
+    .logo {
+        font-size: 2em; /* Mobil cihazlarda logo boyutunu küçült */
+        margin: 0; /* Logo etrafındaki boşluğu sıfırla */
+    }
+
+    .logo-image {
+        width: 40px; /* Mobil cihazlarda logo resminin boyutunu küçült */
+        margin-right: 5px; /* Logo ile metin arasındaki boşluğu azalt */
+    }
+
+    #select-box {
+        display: block; /* Mobil cihazlarda seçenek kutusunu göster */
+        margin: 10px auto; /* Seçenek kutusunu ortala ve kenar boşlukları ekler */
+    }
+
+    .main-nav {
+        display: none; /* Geniş ekranlarda göster, küçük ekranlarda gizle */
+    }
+
+    .banner-title {
+        font-size: 2em; /* Mobil cihazlarda banner başlığı boyutunu küçült */
+    }
+
+    .banner-description {
+        font-size: 1.2em; /* Mobil cihazlarda banner açıklaması boyutunu küçült */
+    }
+
+    .product img {
+        width: 100%; /* Ürün resimlerini tam genişlikte göster */
+        height: auto; /* Boy oranını koru */
+    }
+
+    .product-info {
+        text-align: left; /* Ürün açıklamasını sol kenara hizala */
+    }
+
+    .product {
+        align-items: flex-start; /* Ürünleri üstten başlayacak şekilde hizala */
+    }
+}

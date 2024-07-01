@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otokar - Savunma Sanayimiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="savunmasanayi.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <!-- Logo ve Logo Resmi -->
+            <div class="logo-container">
+                <img src="img/otogar.jpg" alt="Otokar Logo" class="logo-image">
+                <h1 class="logo">Otokar</h1>
+            </div>
+            <nav class="main-nav"id="main-nav">
+                <ul class="nav-links">
+                    <li><a href="Anasayfa.html" >Anasayfa</a></li>
+                    <li><a href="Ticari Araçlar.html">Ticari Araçlar</a></li>
+                    <li><a href="Hakkında.html">Otokar Hakkında</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="Savunma Sanayi.html"class="active">Savunma Sanayi</a></li>
+                </ul>
+            </nav>
+            <select id="select-box" onchange="changePage()">
+                <option value="Anasayfa.html">Anasayfa</option>
+                <option value="Ticari Araçlar.html">Ticari Araçlar</option>
+                <option value="Hakkında.html">Otokar Hakkında</option>
+                <option value="iletisim.html">İletişim</option>
+                <option value="savunmasanayi.html"selected>Savunma Sanayi</option>
+            </select>
+        </div>
+    </header>
+    
+    <section class="banner">
+        <div class="banner-content">
+            <div class="container">
+                <h1 class="banner-title">Otokar Savunma Sanayi</h1>
+                <p class="banner-description">Güçlü ve yenilikçi savunma çözümleri.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="content">
+        <div class="container">
+            <h2 class="section-title">Ürünlerimiz</h2>
+
+            <div class="product">
+                <img src="img/product1.jpg" alt="Ürün 1">
+                <div class="product-info">
+                    <h3 class="product-title">AKREP</h3>
+                    <p class="product-description">Otokar'ın zırhlı keşif ve silah platformu olarak tasarladığı AKREP II 4x4 yeni nesil zırhlı araç ailesi, düşük silueti ile orduların güncel ve gelecek ihtiyaçlarına cevap vermeye hazır.</p>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img/product2.jpg" alt="Ürün 2">
+                <div class="product-info">
+                    <h3 class="product-title">COBRA</h3>
+                    <p class="product-description">Yüksek koruması, üstün hareket kabiliyeti ve farklı görevlere uygulanabilir yapısı ile COBRA her zaman yanınızda, her zaman göreve hazır. 4x4 taktik tekerlekli zırhlı araç COBRA, en zorlu arazi koşullarında, en tehlikeli görevlerde hiçbir zırhlı aracın sunmadığı hareket kabiliyetini mürettebatınıza sunar.</p>
+                </div>
+            </div>
+
+            <!-- Diğer ürünler için aynı yapıyı 12 kez tekrar edin -->
+
+            <div class="product">
+                <img src="img/product3.jpg" alt="Ürün 3">
+                <div class="product-info">
+                    <h3 class="product-title">COBRA2</h3>
+                    <p class="product-description">COBRA II 4x4 Taktik Tekerlekli Zırhlı Araç müttefik ülke ve Türk Silahlı Kuvvetlerinin ileriye dönük gereksinimleri doğrultusunda geliştirilen üstün teknik ve taktik özelliklere sahip modüler bir platformdur.</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img/product4.jpg" alt="Ürün 4">
+                <div class="product-info">
+                    <h3 class="product-title">KAYA</h3>
+                    <p class="product-description">Mayına dayanıklı personel taşıyıcı araç olarak tasarlanan KAYA, burularak araziye maksimum uyum sağlayabilen şasisi ile hem mayın ve kinetik enerjili mühimmatlara karşı üstün koruma sağlamakta hem de her türlü arazi ve iklim koşulunda benzersiz hareket kabiliyeti sunmaktadır. </p>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img/product5.jpg" alt="Ürün 5">
+                <div class="product-info">
+                    <h3 class="product-title">URAL</h3>
+                    <p class="product-description">Tasarım aşamasında optimize edilerek modülerleştirilmiş araç yapısı ve ölçüleri, farklı görevlerin gerektirdiği ekipman, silah sistemleri ve konfigürasyonun kolaylıkla araca adapte edilebilmesini sağlayarak, her türlü görev için tek platform sunar.</p>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img/product6.jpg" alt="Ürün 6">
+                <div class="product-info">
+                    <h3 class="product-title">ISV</h3>
+                    <p class="product-description">Otokar Zırhlı İç Güvenlik Aracı, farklı iç güvenlik görevleri için tasarlanmış ve geliştirilmiştir. Yüksek zırh koruması ile Otokar Zırhlı İç Güvenlik Aracı, personelin riskli alanlarda güvenle taşınmasını sağlar</p>
+
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/product7.jpg" alt="Ürün 7">
+                <div class="product-info">
+                    <h3 class="product-title">ARMA6X6</h3>
+                    <p class="product-description">Otokar’ın özgün tasarımı olan çok tekerlekli zırhlı muharebe aracı ailesinden ARMA 6x6, dünyada dikkatleri üzerine çeken üstün teknik ve taktik özellikleri ile Silahlı Kuvvetlerimiz için göreve hazır.</p>
+
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/product8.jpg" alt="Ürün 8">
+                <div class="product-info">
+                    <h3 class="product-title">ARMA8X8</h3>
+                    <p class="product-description">ARMA zorlu arazi koşullarında etkinliğini arttıran yüksek hareket kabiliyeti ve uzun mesafe yol koşullarında sürati ile her türlü iklim şartında görev yapmaya hazır, ordumuzun gücüne güç katacak modüler bir platform. Yüksek seviyede balistik ve mayın koruması sağlayan zırhlı monokok gövde yapısı; farklı niteliklerde görev ekipmanı veya silah sisteminin entegrasyonuna izin veren modüler bir platform oluşu ile ARMA 8x8, modern muharebe sahasında ve barış gücü operasyonlarında orduların ihtiyaçlarını en iyi şekilde karşılar.</p>
+
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/product9.jpg" alt="Ürün 9">
+                <div class="product-info">
+                    <h3 class="product-title">ARMAII8X8</h3>
+                    <p class="product-description">Yerlilik oranı arttırılan ARMA II, ülkemizin kara sistemlerinde dışa bağımlılığını azaltmada önemli bir rol üstleniyor. ARMA II’de Otokar’ın kendi kaynaklarıyla tasarladığı ve ürettiği süspansiyon sistemi ve transfer kutusu yer alırken, soğutma paketi de dahil olmak üzere milli tasarım ve yerli üretim alt sistemler tercih ediliyor.
+                        ARMA II, birisi yerli olmak üzere iki farklı motor seçeneği ile kullanıcılara sunuluyor.</p>
+
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/product10.jpg" alt="Ürün 10">
+                <div class="product-info">
+                    <h3 class="product-title">ALPAR</h3>
+                    <p class="product-description">Seri hibrit elektrikli tahrikli altyapısı ile tamamen sessiz görev yapabilen ALPAR, farklı görev ihtiyaçlarına yönelik çözümler sağlayan modüler elektronik altyapısı sayesinde keşif gözetleme veya muharebeye yönelik farklı görev kabiliyetlerini, otonom ve uzaktan komuta, düşük termal ve akustik iz, araç takip yeteneği, arazide hafif tank ve benzeri araçlara denk hareket çevikliği ile birleştiren insansız olarak tasarlanmış Türkiye’nin ilk ağır sınıf kara aracıdır.</p>
+
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/product11.jpg" alt="Ürün 11">
+                <div class="product-info">
+                    <h3 class="product-title">TULPAR</h3>
+                    <p class="product-description">TULPAR, yüksek ateş gücüne, modüler yapıya ve büyüme potansiyeline sahip, güncel ve gelecekteki operasyonel gereksinimleri karşılamak üzere farklı konfigürasyonlar oluşturulabilen çok amaçlı bir platformdur. Modüler tasarım yaklaşımı, farklı konfigürasyonlar için ortak gövde yapısı ve ortak alt sistemler kullanılabilmesini sağlamaktadır. TULPAR’ın farklı araç konfigürasyonlarının ortak alt sistemler ile görev yapabilmesi kullanım esnekliğini arttırmaktadır.</p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2024 Otokar - Tüm Hakları Saklıdır.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/otokarsavunmasanayi" class="social-link" id="instagram-link">
+                    <img src="img/instagram.jpg" alt="Instagram Logo"> Instagram
+                </a>
+                <a href="https://www.twitter.com/OtokarAS" class="social-link" id="twitter-link">
+                    <img src="img/twitter.jpg" alt="Twitter Logo"> Twitter
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function changePage() {
+            var selectBox = document.getElementById("select-box");
+            var selectedValue = selectBox.value;
+            window.location.href = selectedValue;
+        }
+
+        // Ekran boyutuna göre menü veya seçenek kutusunu göster/gizle
+        function toggleMenu() {
+            var mainNav = document.getElementById("main-nav");
+            var selectBox = document.getElementById("select-box");
+
+            if (window.innerWidth <= 768) {
+                mainNav.style.display = "none";
+                selectBox.style.display = "block";
+            } else {
+                mainNav.style.display = "block";
+                selectBox.style.display = "none";
+            }
+        }
+
+        // Sayfa yüklendiğinde ve boyut değiştiğinde kontrol et
+        window.onload = toggleMenu;
+        window.onresize = toggleMenu;
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

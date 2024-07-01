@@ -1,0 +1,328 @@
+/* Genel stiller */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Siyah arka plan */
+    color: #fff; /* Beyaz metin renk */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff; /* Beyaz renk */
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #333;
+}
+
+.nav-links a.active {
+    background-color: #555;
+}
+
+/* Banner */
+.banner {
+    background-image: url('img/banner3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.banner-title {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.banner-description {
+    font-size: 1.5em;
+}
+
+/* İçerik */
+.content {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.product-list {
+    display: grid;
+    gap: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.gallery-item-info {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.gallery-title {
+    font-size: 1.2em;
+    margin-top: 0;
+    color: #000;
+}
+
+.gallery-description {
+    font-size: 1em;
+    color: #666;
+}
+
+.button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/* Renk değişiklikleri */
+.nav-links a {
+    color: #fcfcfc; /* Siyah renk */
+}
+
+.nav-links a:hover {
+    background-color: #555; /* Hover arkaplan rengi */
+    color: #fff; /* Hover renk */
+}
+
+.nav-links a.active {
+    background-color: #555;
+    color: #fff; /* Aktif renk */
+}
+
+/* Ana sayfa, Hakkında, Ticari Araçlar ve İletişim bağlantıları */
+.nav-links li:nth-child(1) a,
+.nav-links li:nth-child(2) a,
+.nav-links li:nth-child(3) a,
+.nav-links li:nth-child(4) a {
+    color: #fff; /* Beyaz renk */
+}
+
+.nav-links li:nth-child(1) a:hover,
+.nav-links li:nth-child(2) a:hover,
+.nav-links li:nth-child(3) a:hover,
+.nav-links li:nth-child(4) a:hover {
+    background-color: #333; /* Hover arkaplan rengi */
+    color: #fff; /* Hover renk */
+}
+
+.nav-links li:nth-child(1) a.active,
+.nav-links li:nth-child(2) a.active,
+.nav-links li:nth-child(3) a.active,
+.nav-links li:nth-child(4) a.active {
+    background-color: #555;
+    color: #fff; /* Aktif renk */
+}
+
+
+/* Kategori bağlantıları */
+.category-link {
+    color: #fcfcfc; /* Siyah renk */
+}
+.category-link.active {
+    font-weight: bold; /* Seçili kategoriyi kalın yapabilirsiniz */
+    color: red; /* Seçili kategoriyi farklı bir renkte gösterebilirsiniz */
+}
+
+
+.category-link:hover {
+    background-color: #555; /* Hover arkaplan rengi */
+    color: #fff; /* Hover renk */
+}
+
+.category-link.active {
+    background-color: #555;
+    color: #fff; /* Aktif renk */
+}
+
+/* Kamyonlar için stil */
+.product.kamyon .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product.kamyon .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product.kamyon .gallery-item img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.product.kamyon .gallery-item-info {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+}
+
+.product.kamyon .gallery-title {
+    font-size: 1.2em;
+    margin-top: 0;
+    color: #000;
+}
+
+.product.kamyon .gallery-description {
+    font-size: 1em;
+    color: #666;
+}
+
+
+
+
+/* İletişim formu stilleri */
+.contact-form {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #555;
+}
+/* Mobil Uyumlu Stiller */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Ekranın %90'ına kadar içeriği hizala */
+    }
+
+    .nav-links {
+        display: none; /* Geniş ekranda göster, küçük ekranda gizle */
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center; /* Logo ve metni ortala */
+        margin-bottom: 20px; /* Logoyu ve metni alttaki içerikten uzaklaştır */
+    }
+
+    .logo {
+        font-size: 2em; /* Mobil cihazlarda logo boyutunu küçült */
+        margin: 0; /* Logo etrafındaki boşluğu sıfırla */
+    }
+
+    .logo-image {
+        width: 40px; /* Mobil cihazlarda logo resminin boyutunu küçült */
+        margin-right: 5px; /* Logo ile metin arasındaki boşluğu azalt */
+    }
+
+    #select-box {
+        display: block; /* Mobil cihazlarda seçenek kutusunu göster */
+        margin: 10px auto; /* Seçenek kutusunu ortala ve kenar boşlukları ekler */
+    }
+
+    .main-nav {
+        display: none; /* Geniş ekranlarda göster, küçük ekranlarda gizle */
+    }
+
+    .banner-title {
+        font-size: 2em; /* Mobil cihazlarda banner başlığı boyutunu küçült */
+    }
+
+    .banner-description {
+        font-size: 1.2em; /* Mobil cihazlarda banner açıklaması boyutunu küçült */
+    }
+
+    .product img {
+        width: 100%; /* Ürün resimlerini tam genişlikte göster */
+        height: auto; /* Boy oranını koru */
+    }
+
+    .product-info {
+        text-align: left; /* Ürün açıklamasını sol kenara hizala */
+    }
+
+    .product {
+        align-items: flex-start; /* Ürünleri üstten başlayacak şekilde hizala */
+    }
+}

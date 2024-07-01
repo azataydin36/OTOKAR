@@ -1,0 +1,227 @@
+/* Genel stiller */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Siyah arka plan */
+    color: #fff; /* Beyaz metin rengi */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px; /* İçerik kenar boşluğu */
+    box-sizing: border-box; /* Padding için box modeli düzenlendi */
+}
+
+/* Header stilleri */
+.header {
+    background-color: #0f0f0f; /* Arka plan rengi koyu gri (#0f0f0f) */
+    color: #fff; /* Metin rengi beyaz */
+    padding: 10px 0; /* İç kenar boşlukları */
+    display: flex; /* Yatay düzende hizalar */
+    justify-content: space-between; /* İçerik arasındaki boşluğu dağıtır */
+    align-items: center; /* Dikeyde hizalar */
+    height: 100px; /* Yükseklik */
+}
+
+.logo {
+    font-size: 3em; /* Yazı tipi boyutu */
+    margin: 0 20px; /* Kenar boşlukları */
+}
+
+.main-nav {
+    flex: 1; /* Menü öğesini alana göre genişletir */
+    text-align: center; /* Metni ortalar */
+    z-index: 1;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff; /* Beyaz renk */
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #333; /* Hover arkaplan rengi */
+}
+
+.nav-links a.active {
+    background-color: #555; /* Aktif arkaplan rengi */
+}
+
+/* Özelleştirilmiş Seçenek Kutusu */
+.select-box {
+    display: none; /* Varsayılan olarak seçenek kutusunu gizle */
+}
+
+#menu {
+    display: none; /* Varsayılan olarak seçenek kutusunu gizle */
+}
+
+/* Banner */
+.banner {
+    background-image: url('img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fcfcfc; /* Metin rengi */
+    text-align: center;
+    padding: 100px 0;
+    height: 400px;
+    position: relative; /* banner-content'in pozisyonu ayarlandı */
+}
+
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.banner-description {
+    font-size: 1.5em;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Galeri öğelerini sarma */
+}
+
+.gallery-item {
+    flex: 1;
+    max-width: calc(50% - 20px); /* Mobilde iki sütun, kenar boşluklar dahil */
+    margin: 10px; /* Kenar boşluklar */
+    box-sizing: border-box; /* Padding için box modeli düzenlendi */
+    text-align: center;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #363232;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    position: relative;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.social-link img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Logo ve Logo Resmi */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50px; /* Logo genişliği */
+    height: auto; /* Otomatik yükseklik */
+    margin-right: 10px; /* Logo ile metin arasındaki boşluk */
+}
+
+/* Mobil Uyumlu Stiller */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Ekranın %90'ına kadar içeriği hizala */
+    }
+
+    .nav-links {
+        display: none; /* Geniş ekranda göster, küçük ekranda gizle */
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center; /* Logo ve metni ortala */
+        margin-bottom: 20px; /* Logoyu ve metni alttaki içerikten uzaklaştır */
+    }
+
+    .logo {
+        font-size: 2em; /* Mobil cihazlarda logo boyutunu küçült */
+        margin: 0; /* Logo etrafındaki boşluğu sıfırla */
+    }
+
+    .logo-image {
+        width: 40px; /* Mobil cihazlarda logo resminin boyutunu küçült */
+        margin-right: 5px; /* Logo ile metin arasındaki boşluğu azalt */
+    }
+
+    #select-box {
+        display: block; /* Mobil cihazlarda seçenek kutusunu göster */
+        margin: 10px auto; /* Seçenek kutusunu ortala ve kenar boşlukları ekler */
+    }
+
+    .main-nav {
+        display: none; /* Geniş ekranlarda göster, küçük ekranlarda gizle */
+    }
+
+    .banner-title {
+        font-size: 2em; /* Mobil cihazlarda banner başlığı boyutunu küçült */
+    }
+
+    .banner-description {
+        font-size: 1.2em; /* Mobil cihazlarda banner açıklaması boyutunu küçült */
+    }
+
+    .product img {
+        width: 100%; /* Ürün resimlerini tam genişlikte göster */
+        height: auto; /* Boy oranını koru */
+    }
+
+    .product-info {
+        text-align: left; /* Ürün açıklamasını sol kenara hizala */
+    }
+
+    .product {
+        align-items: flex-start; /* Ürünleri üstten başlayacak şekilde hizala */
+    }
+}

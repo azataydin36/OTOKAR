@@ -1,0 +1,144 @@
+/* Genel stiller */
+body {
+    font-family: Arial, sans-serif; /* Sayfadaki tüm metinler için Arial veya sans-serif (yedek) yazı tipi kullanılır */
+    line-height: 1.6; /* Satır aralığını belirler */
+    margin: 0; /* Sayfa kenar boşluklarını sıfırlar */
+    padding: 0; /* İçerik kenar boşluklarını sıfırlar */
+    background-color: #f0f0f0; /* Arka plan rengi gri tonu (#f0f0f0) */
+}
+
+.container {
+    width: 80%; /* Sayfanın genişliğinin %80'ini kaplayacak şekilde içeriği hizalar */
+    margin: auto; /* .container'ı sayfanın ortasına hizalar */
+    overflow: hidden; /* İçeriğin dışarı taşmasını engeller */
+}
+
+/* Header */
+.header {
+    background-color: #0f0f0f; /* Arka plan rengi koyu gri (#0f0f0f) olarak ayarlanır */
+    color: #fff; /* Metin rengi beyaz olarak ayarlanır */
+    padding: 10px 0; /* Başlık içindeki iç kenar boşlukları ayarlanır */
+    display: flex; /* Başlık içeriğini yatay olarak hizalar */
+    justify-content: space-between; /* İçerik arasındaki boşluğu dağıtır */
+    align-items: center; /* Dikeyde hizalama */
+    height: 100px;
+}
+
+.logo {
+    font-size: 3em; /* Logo yazı tipi boyutunu 3em olarak ayarlar */
+    margin: 0 20px; /* Logo etrafındaki dış kenar boşluğunu sıfırlar */
+}
+
+.main-nav {
+    flex: 1; /* Menü öğesini alana göre genişletir */
+    text-align: right; /* Menüyü sağa hizalar */
+    margin-top: -50px; /* Menü kutusunu yukarı doğru taşıyan margin değeri */
+    z-index: 1;
+}
+
+/* Özelleştirilmiş Seçenek Kutusu */
+#menu {
+    padding: 12px 12px 12px 16px; /* Seçenek kutusu iç kenar boşluğunu ayarlar (üst, sağ, alt, sol) */
+    font-size: 16px; /* Yazı tipi boyutunu ayarlar */
+    border: 2px solid #007bff; /* Kenarlık rengini belirler */
+    border-radius: 8px; /* Köşe yuvarlama işlemi yapar */
+    background-color: #fff; /* Arka plan rengini belirler */
+    color: #333; /* Metin rengini belirler */
+    appearance: none; /* Tarayıcı varsayılan görünümünü kaldırır */
+    padding-right: 32px; /* Sağ tarafta görsel ok için yer ayırır */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="none" d="M6 8l4 4 4-4" stroke="%23007bff" stroke-width="2"/></svg>'); /* Görsel okun SVG verisi */
+    background-repeat: no-repeat; /* Arka plan görselini yineleme */
+    background-position: right 10px center; /* Görsel okun konumu */
+    cursor: pointer; /* İşaretçiyi işaretçiye dönüştür */
+    transition: all 0.3s ease; /* Geçiş efekti */
+    z-index: 1;
+}
+
+#menu:hover {
+    background-color: #f0f0f0; /* Üzerine gelindiğinde arka plan rengini değiştir */
+}
+
+#menu:focus {
+    outline: none; /* Odaklandığında varsayılan odak çerçevesini kaldır */
+    border-color: #0056b3; /* Seçenek kutusu etrafındaki kenarlık rengini belirler */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Seçenek kutusunun etrafında hafif bir gölge oluşturur */
+}
+
+#menu option {
+    background-color: #fff; /* Seçenek kutusu seçeneklerinin arka plan rengini belirler */
+    color: #333; /* Seçenek kutusu seçeneklerinin metin rengini belirler */
+}
+
+/* İçerik */
+.content {
+    padding: 20px 0; /* İçerik içindeki iç kenar boşluklarını ayarlar */
+    text-align: center; /* Metni merkeze hizalar */
+}
+
+.section-title {
+    margin-bottom: 20px; /* İçerik başlığı alt kenar boşluğunu 20 piksel olarak ayarlar */
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #363232;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}
+/* Footer */
+.footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #363232;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}
+/* Footer */
+.footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #363232;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    position: relative;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.social-link img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50px; /* İstenilen boyuta göre ayarlayabilirsiniz */
+    margin-right: 10px;
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otokar - Ticari Ürünlerimiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Ticari Araçlar.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <!-- Logo ve Logo Resmi -->
+            <div class="logo-container">
+                <img src="img/otogar.jpg" alt="Otokar Logo" class="logo-image">
+                <h1 class="logo">Otokar</h1>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links"id="main-nav">
+                    <li><a href="Anasayfa.html">Anasayfa</a></li>
+                    <li><a href="Ticari Araçlar.html" class="active">Ticari Araçlar</a></li>
+                    <li><a href="Hakkında.html">Otokar Hakkında</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="savunmasanayi.html">Savunma Sanayi</a></li>
+                </ul>
+            </nav>
+            <select id="select-box" onchange="changePage()">
+                <option value="Anasayfa.html">Anasayfa</option>
+                <option value="Ticari Araçlar.html"selected>Ticari Araçlar</option>
+                <option value="Hakkında.html">Otokar Hakkında</option>
+                <option value="iletisim.html">İletişim</option>
+                <option value="savunmasanayi.html">Savunma Sanayi</option>
+            </select>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="banner-content">
+            <div class="container">
+                <h1 class="banner-title">Otokar'a Ait Tüm Ticari Araç Ürünlerimiz</h1>
+                <p class="banner-description">Mikrobüs Otobüs Kamyon</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#" data-category="all" class="category-link">Tümü</a></li>
+                <li><a href="#" data-category="mikro" class="category-link">Mikrobüsler</a></li>
+                <li><a href="#" data-category="otobus" class="category-link">Otobüsler</a></li>
+                <li><a href="#" data-category="kamyon" class="category-link">Kamyonlar</a></li>
+            </ul>
+            <div class="product-list">
+                <!-- Mikro Otobüsler -->
+                <div class="product mikro">
+                    <h2 class="product-category">Mikrobüsler</h2>
+                    <div class="gallery">
+                        <div class="gallery-item">
+                            <img src="img/centro.jpg" alt="Mikro Otobüs 1">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">Centro</h3>
+                                <button class="read-more-btn"><details>
+                                    <p class="gallery-description">Otokar CENTRO mikrobüsü yolcusuna konfor, esnafa yüksek kazanç vaad ediyor.Otokar CENTRO mikrobüsü fabrika çıkışlı yüksek yolcu kapasitesi ve geniş ayakta yolcu alanı ile dikkat çekiyor. 11 sabit koltuk, 6 katlanır koltuk ve 14 ayakta yolcu kapasitesi ile toplu taşımacılığa hazır halde sunuluyor.</p>
+                                </details></button>
+                            
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img/e-centro.jpg" alt="Mikro Otobüs 2">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">E-CENTRO</h3>
+                                    <button class="read-more-btn"><details>
+                                        <p class="gallery-description">e-CENTRO tarihi şehirler, turistik bölgeler ve sıfır emisyonlu bölgelerde çevreci, sessiz ve yüksek verimli taşımacılık için tasarlandı.e-CENTRO’nun Li-ion NMC bataryaları 1.5 saat gibi hızlı bir sürede doluyor ve tek şarj ile 200 km’ye yakın menzil sunuyor.
+                                            Ayrıca rejeneratif frenleme özelliği ile şehir trafiğinde yapılan frenleme ve yavaşlamalardan %25 oranında enerji geri kazanımı sağlayarak daha uzun hizmet veriyor.</p>
+                                    </details>
+                                    </button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Otobüsler -->
+                <div class="product otobus">
+                    <h2 class="product-category">Otobüsler</h2>
+                    <div class="gallery">
+                        <div class="gallery-item">
+                            <img src="img/otobüs1.jpg" alt="Otobüs 1">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">e-KENT</h3>
+                                <button class="read-more-btn"><details><p class="gallery-description">Daha temiz bir çevre, daha sessiz trafik, daha düşük işletme maliyetleri ve daha yüksek verimlilik sağlamak hedefiyle tasarlanan %100 elektrik ile çalışan yeni şehir içi otobüsü e-Kent; tasarımının yanı sıra konforu, sahip olduğu teknolojiler ve güvenlik alanındaki yenilikçi çözümleriyle ön plana çıkıyor.
+                                     Elektrik enerjisi ile çalışan e-Kent, tam şarjla topografya ve kullanım profiline bağlı olarak 300 kilometre üzerinde menzil sunabiliyor. 
+                                    Araç, geniş iç hacmi ile yolcuları için daha iyi görüş ve konfor sunuyor.</p></details></button>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="img/otobüs2.jpg" alt="Otobüs 2">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">KENT Hidrojen</h3>
+                                </p>
+                                <button class="read-more-btn"><details><p class="gallery-description">KENT Hidrojen, karbon emisyonlarının azaltılması, temiz enerji dönüşümü ve sürdürülebilir ulaşım politikalarına destek olacak. Özellikle tarihi şehirler gibi sınırlı şarj altyapısına sahip bölgeler için çevre dostu bir çözüm olarak öne çıkan KENT Hidrojen, düşük yakıt tüketimi, düşük işletme maliyeti, yüksek teknoloji özellikleri ile dikkat çekiyor.
+                                     KENT Hidrojen, sıfır emisyonlu yapısıyla sadece su buharı üreterek zararlı emisyonları büyük ölçüde azaltırken, kentlerde hava kalitesini iyileştirmeye katkı sağlıyor.
+                                     12 metre uzunluğundaki alçak tabanlı araç, yüksek yolcu kapasitesi ve geniş iç hacim sunuyor.</details></button>
+                            </div>
+                        </div>
+                        <!-- Otobüs 3 -->
+                        <div class="gallery-item">
+                            <img src="img/otobus3.jpg" alt="Otobüs 3">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">e-KENT KÖRÜKLÜ</h3>
+                                <button class="read-more-btn"><details><p class="gallery-description">Otokar’ın çevre dostu %100 elektrikli körüklü otobüsü e-KENT, sıfır emisyon değeri ve sessiz sürüş imkanı, dinamik, özgün dış hatları ve geleceği yansıtan tasarımı ile şehrinizin parlayan yıldızı oluyor.</p></details></button>
+                            </div>
+                        </div>
+                        <!-- Otobüs 4 -->
+                        <div class="gallery-item">
+                            <img src="img/otobus4.jpg" alt="Otobüs 4">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">KENT CNG</h3>
+                                </p>
+                                <button class="read-more-btn"><details><p class="gallery-description">Doğalgazlı çevre dostu Kent CNG otobüsleri, modern iç ve dış görüntüsü, çevreci motoru, alçak taban girişi, yüksek yolcu kapasitesi, üstün yol tutuşu ve her mevsim ferah bir yolculuk vadeden güçlü klimasıyla şehir içi yolculuklarda dikkat çekiyor. ABS, ASR, disk frenler ve kapılarda sıkışmayı önleyici sistem ile maksimum güvenlik sunan araç; aynı zamanda şehir içi toplu ulaşımda üst düzey konfor vadediyor.</details></button>
+                            </div>
+                        </div>
+                        <!-- Otobüs 5 -->
+                        <div class="gallery-item">
+                            <img src="img/otobus5.jpg" alt="Otobüs 5">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">KENT LF</h3>
+                                </p>
+                                <button class="read-more-btn"><details><p class="gallery-description">İç ve dış modern görüntüsü, çevreci motoru, üstün yol tutuşunun yanı sıra ekonomik olmasıyla da ön plana çıkan şehir içi ulaşımın gözdesi Kent LF, düşük işletme giderleriyle de kullanıcısına her daim maliyet etkin çözümler üretmesini sağlıyor. Güçlü kliması ile her mevsim ferah yolculuk vadeden araç, ABS, ASR, disk frenler ve kapılarda sıkışmayı önleyici sistemiyle maksimum güvenlik sunuyor. Basamaksız girişi ve tam alçak tabanı, engelli ve bebek arabalı yolcuların erişimine sağladığı kolaylık ve geniş iç hacmi ile yolculara modern ve eşsiz bir konfor sunan Otokar Kent LF, sahip olduğu özelliklerle Türkiye’de ve yurt dışında şehir içi toplu taşımacılıkta büyük beğeni topluyor.</details></button>
+                            </div>
+                        </div>
+                        <!-- Otobüs 6 -->
+                        <div class="gallery-item">
+                            <img src="img/otobus6.jpg" alt="Otobüs 6">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">KENT XL</h3>
+                                </p>
+                                <button class="read-more-btn"><details><p class="gallery-description">Otokar’ın yerli metrobüsü KENT XL, yeni nesil gövde yapısı, yüksek taşıma kapasitesi, yolcularına sunduğu üst düzey konfor ve düşük işletme giderleriyle dikkat çekiyor. KENT XL toplu taşımada Hızlı Otobüs Taşımacılığı (Bus Rapid Transport) tercih eden şehirlerin öncelikli tercihlerinden olmaya hazır.</details></button>
+                            </div>
+                        </div>
+                        <!-- Otobüs 7 -->
+                        <div class="gallery-item">
+                            <img src="img/otobus7.jpg" alt="Otobüs 7">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">KENT LF KÖRÜKLÜ</h3>
+                                </p>
+                                <button class="read-more-btn"><details><p class="gallery-description">Kent Körüklü LF otobüsleri, modern iç ve dış görüntüsü, çevreci ve verimli motoru, üstün yol tutuşuyla da dikkat çekiyor. Koltuk başına düşük işletme maliyeti sunan Kent Körüklü otobüsleri güçlü kliması ile her mevsim ferah yolculuk vadediyor. ABS, ASR, disk frenler ve kapılarda sıkışmayı önleyici sistem ile maksimum güvenlik sunan araç; toplu ulaşımda üst düzey konfor vadediyor. Kent Körüklü LF, yüksek yolcu taşıma kapasitesiyle de şehir içi yolculuklarda ön plana çıkıyor.</details></button>
+                            </div>
+                        </div>
+                        <!-- Otobüs 8 -->
+                        <div class="gallery-item">
+                            <img src="img/otobus8.jpg" alt="Otobüs 8">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">TERRITO U</h3>
+                                </p>
+                                <button class="read-more-btn"><details><p class="gallery-description">Territo U, 74 kişiye varan yüksek yolcu kapasitesi, ayakta ve oturarak yolcu taşıma imkanı ile öne çıkan bir toplu taşıma aracıdır.</details></button>
+                            </div>
+                        </div>
+                        <!-- Otobüs 9 -->
+                        <div class="gallery-item">
+                            <img src="img/otobus9.jpg" alt="Otobüs 9">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">KENT CNG KÖRÜKLÜ</h3>
+                                </p>
+                                <button class="read-more-btn"><details> <p class="gallery-description">Kent CNG Körüklü otobüsleri, modern iç ve dış görüntüsü, Doğalgazla çalışan çevreci ve verimli motoru, üstün yol tutuşuyla da dikkat çekiyor. Koltuk başına düşük işletme maliyeti sunan Kent Körüklü otobüsleri güçlü kliması ile her mevsim ferah yolculuk vadediyor. ABS, ASR, disk frenler ve kapılarda sıkışmayı önleyici sistem ile maksimum güvenlik sunan araç; toplu ulaşımda üst düzey konfor vadediyor. Kent CNG Körüklü, yüksek yolcu taşıma kapasitesiyle de şehir içi yolculuklarda ön plana çıkıyor.</details></button>
+                            </div>
+                        </div>
+                        <!-- Otobüs 10 -->
+                        <div class="gallery-item">
+                            <img src="img/otobus10.jpg" alt="Otobüs 10">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">e-TERRITO</h3>
+                                </p>
+                                <button class="read-more-btn"><details><p class="gallery-description">Tasarımı, yüksek yolcu kapasitesi, sahip olduğu özellikler, bagaj bölmeleriyle Avrupalı operatörlerin ilgisi çeken "Mükemmel Tasarım" ödüllü Otokar TERRITO, elektrikli versiyonuyla Busworld’de yer aldı. Geniş bir kullanım alanına cevap verecek şekilde tasarlanan 13 metre uzunluğundaki e-TERRITO, optimum menzili, yüksek performansı, sıfır emisyonu, çok yönlülüğü ve bağımsız ön süspansiyonları ile öne çıkıyor.</details></button>
+                            </div>
+                        </div>
+                        <!-- Otobüs 11 -->
+                        <div class="gallery-item">
+                            <img src="img/otobus11.jpg" alt="Otobüs 11">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">KENT U</h3>
+                                </p>
+                                <button class="read-more-btn"><details><p class="gallery-description">KENT U, 76 kişiye varan yüksek yolcu kapasitesi, ayakta ve oturarak yolcu taşıma imkanı ile öne çıkan bir toplu taşıma aracıdır.</details></button>
+                            </div>
+                        </div>
+                        <!-- Otobüs 12 -->
+                        <div class="gallery-item">
+                            <img src="img/otobus12.jpg" alt="Otobüs 12">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">DORUK LE</h3>
+                                </p>
+                                <button class="read-more-btn"><details><p class="gallery-description">Otokar'ın kullanıcı beklentileri doğrultusunda ürettiği ve yurt dışına Vectio ismiyle sunulan 9 metrelik orta boy Doruk LE şehir içi otobüsleri, iç ve dış modern görüntüsü, güçlü motoru, yol tutuşu ve üstün çekiş performansının yanı sıra düşük işletme giderleriyle de ön plana çıkıyor. Büyük ve geniş camları, ferah iç hacmi ve standart sunulan kliması ile yolculara rahat ve keyifli bir yolculuk yaşatıyor. Avrupa güvenlik normlarına uygun sistemlerin kullanıldığı otobüslerde, ön ve arkada tam kuru havalı disk frenlere ek olarak ABS, ASR ve Retarder sayesinde maksimum güvenlik sunuyor. Ayrıca, alçak tabanı ve iniş kapısındaki engelli rampası ile tekerlekli sandalyeli, bebek arabalı ve yaşlı yolcuların rahatlıkla araca giriş ve çıkışına olanak sağlayan bir şehir içi toplu taşıma aracıdır.</details></button>
+                            </div>
+                        </div>
+                        <!-- Otobüs 13 -->
+                        <div class="gallery-item">
+                            <img src="img/otobus13.jpg" alt="Otobüs 13">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">SULTAN LF</h3>
+                                </p>
+                                <button class="read-more-btn"><details><p class="gallery-description">Sınıfının tek tam alçak tabanlı şehir içi yolcu otobüsü olma özelliğine sahip olan Sultan LF, yüksek yolcu kapasitesi, engelli yolcu rampası, geniş yolcu alanı, rampaları kolayca tırmanmasını sağlayan yüksek tork değeriyle dikkat çekiyor. Yolculardan ayrılmış özel sürücü bölgesi, kısa vites kolu ve konforlu sürüşü ile rakiplerinden ayrışan Sultan LF'de klima, kamera ve kayıt sistemleri, dijital hat tabelaları gibi zengin donanımlar standart olarak sunuluyor. Güçlü motoru ile her türlü yol koşulunda üstün performans sunan Sultan LF, hafif gövde yapısı ile güç ve ekonomiyi birlikte sunuyor. 8.4 metrelik uzunluğa sahip olan ve standart olarak 21+4(katlanır)+35+1, isteğe bağlı olarak 21+42+1 ve 21+1 (tekerlekli sandalye) +35+1 yolcu taşıma kapasitesiyle üretilebilen Sultan LF, şehir içi toplu ulaşımda fark yaratıyor.</details></button>
+                            </div>
+                        </div>
+                        <!-- Otobüs 14 -->
+                        <div class="gallery-item">
+                            <img src="img/otobus14.jpg" alt="Otobüs 14">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">SULTAN CITY</h3>
+                                </p>
+                                <button class="read-more-btn"><details><p class="gallery-description">Şehir içi toplu taşımacılığında iç ferahlığı ile ön plana çıkan Sultan City, düz arka zemini engelli yolcu taşımacılığına olanak veriyor. Araç, geniş kapısı ile hem yolcu iniş binişini hızlandırıyor; hem de kolay açılır kapanır engelli rampasıyla herkese seyahat özgürlüğü sunuyor.</details></button>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- Kamyonlar -->
+                <div class="product kamyon">
+                    <h2 class="product-category">Kamyonlar</h2>
+                    <div class="gallery">
+                        <div class="gallery-item">
+                            <img src="img/kamyon1.jpg" alt="Kamyon 1">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">Atlas 8,5</h3>
+                                </p>
+                                <button class="read-more-btn"><details><p class="gallery-description">ATLAS 8,5, hem sürüş konforunuz hem de güvenliğiniz için birçok özelliği standart olarak sunuyor. ATLAS, 112 kW ve 534 Nm tork değerine sahip güçlü motoru ile her türlü yol koşulunda en üstün performansı sunuyor. ATLAS 8,5, düşük yakıt tüketimi, düşük bakım giderleri ve uygun yedek parça maliyeti ile ekonominize her daim katkı sağlıyor.</details></button>
+                            </div>
+                        </div>
+                        <!-- Kamyon 2 -->
+                        <div class="gallery-item">
+                            <img src="img/kamyon2.jpg" alt="Kamyon 2">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">Atlas 11</h3>
+                                </p>
+                                <button class="read-more-btn"><details><p class="gallery-description">Atlas kamyon ailemizin yeni üyesi ATLAS 11 hem üst düzey sürüş konforu hem de güvenliğiniz için birçok özelliği standart olarak sunuyor. Yüksek torklu, güçlü motoru ile en zorlu yol şartlarında en üstün performansı sunuyor. ATLAS, düşük yakıt tüketimi, düşük bakım giderleri ve uygun yedek parça maliyeti ile bütçenizin dostudur.</details></button>
+                            </div>
+                        </div>
+                        <!-- Kamyon 3 -->
+                        <div class="gallery-item">
+                            <img src="img/kamyon3.jpg" alt="Kamyon 3">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">Atlas 3D 12</h3>
+                                </p>
+                                <button class="read-more-btn">
+                                    <details><p class="gallery-description">Otokar ATLAS 3D 12 yüksek taşıma kapasitesini düşük işletme giderleri ve konforla buluşturuyor. 12,1 tonluk azami yüklü ağırlık sunan ATLAS 3D 12 ideal boyutlarıyla en dar sokaklarda bile hareket kabiliyetinizi arttırıyor. Sunduğu yakıt ekonomisi ile bütçenize yük olmuyor.</details></button>
+                            </div>
+                        </div>
+                        <!-- Kamyon 4 -->
+                        <div class="gallery-item">
+                            <img src="img/kamyon4.jpg" alt="Kamyon 4">
+                            <div class="gallery-item-info">
+                                <h3 class="gallery-title">Atlas 3D 15</h3>
+                                </p>
+                                <button class="read-more-btn"><details><p class="gallery-description">Atlas kamyon ailemizin yeni üyesi ATLAS 3D 15 hem üst düzey sürüş konforu hem de güvenliğiniz için birçok özelliği standart olarak sunuyor. Yüksek torklu, güçlü motoru ile en zorlu yol şartlarında en üstün performansı sunuyor. ATLAS, düşük yakıt tüketimi, düşük bakım giderleri ve uygun yedek parça maliyeti ile bütçenizin dostudur.</details></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2024 Otokar - Tüm Hakları Saklıdır.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/otokarsavunmasanayi" class="social-link" id="instagram-link">
+                    <img src="img/instagram.jpg" alt="Instagram Logo"> Instagram
+                </a>
+                <a href="https://www.twitter.com/OtokarAS" class="social-link" id="twitter-link">
+                    <img src="img/twitter.jpg" alt="Twitter Logo"> Twitter
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function changePage() {
+            var selectBox = document.getElementById("select-box");
+            var selectedValue = selectBox.value;
+            window.location.href = selectedValue;
+        }
+
+        // Ekran boyutuna göre menü veya seçenek kutusunu göster/gizle
+        function toggleMenu() {
+            var mainNav = document.getElementById("main-nav");
+            var selectBox = document.getElementById("select-box");
+
+            if (window.innerWidth <= 768) {
+                mainNav.style.display = "none";
+                selectBox.style.display = "block";
+            } else {
+                mainNav.style.display = "block";
+                selectBox.style.display = "none";
+            }
+        }
+
+        // Sayfa yüklendiğinde ve boyut değiştiğinde kontrol et
+        window.onload = toggleMenu;
+        window.onresize = toggleMenu;
+    </script>
+        <script src="kategori.js"></script>
+</body>
+</html>
